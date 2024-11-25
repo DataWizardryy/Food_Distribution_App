@@ -1,0 +1,183 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+  color: #333; /* Dark gray text */
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #343a40; /* Deep gray text */
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff; /* Bootstrap blue */
+  font-weight: 500;
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue */
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #343a40;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ffc107; /* Gold */
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Forms */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #555;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #343a40;
+  color: white;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+/* Cards (for food lists or user interactions) */
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px 0;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Background for the Home Page */
+.home-background {
+  background: url('../images/food-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.home-background h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.home-background p {
+  font-size: 1.5rem;
+}
+
+.home-background a {
+  display: inline-block;
+  background-color: #ffc107;
+  color: #343a40;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.home-background a:hover {
+  background-color: #e0a800;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .home-background h1 {
+      font-size: 2.5rem;
+  }
+
+  .home-background p {
+      font-size: 1.2rem;
+  }
+
+  form {
+      width: 90%;
+  }
+}

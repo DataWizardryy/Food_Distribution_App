@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Food</title>
+</head>
+<body>
+    <h1>Request Food</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="organization">Organization/Individual Name:</label>
+        <input type="text" id="organization" name="organization" required><br><br>
+
+        <label for="food_type">Type of Food Requested:</label>
+        <input type="text" id="food_type" name="food_type" required><br><br>
+
+        <label for="quantity">Quantity Needed:</label>
+        <input type="number" id="quantity" name="quantity" required><br><br>
+
+        <label for="reason">Reason for Request:</label><br>
+        <textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Request Food</button>
+    </form>
+</body>
+</html>

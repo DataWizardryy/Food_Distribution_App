@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Coordination</title>
+</head>
+<body>
+    <h1>Volunteer Sign-Up</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="contact">Contact Information:</label>
+        <input type="text" id="contact" name="contact" required><br><br>
+
+        <label for="availability">Availability:</label>
+        <input type="text" id="availability" name="availability" required><br><br>
+
+        <label for="vehicle">Do you have a vehicle for transport?</label><br>
+        <input type="radio" id="vehicle_yes" name="vehicle" value="Yes" required>
+        <label for="vehicle_yes">Yes</label><br>
+        <input type="radio" id="vehicle_no" name="vehicle" value="No" required>
+        <label for="vehicle_no">No</label><br><br>
+
+        <button type="submit">Sign Up as Volunteer</button>
+    </form>
+</body>
+</html>

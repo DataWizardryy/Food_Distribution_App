@@ -1,0 +1,6 @@
+<h1>Food Availability Map</h1>
+<ul>
+    {% for item in food_items %}
+        <li>{{ item.food_description }} ({{ item.quantity }}) - Location: {{ item.location }}</li>
+    {% endfor %}
+</ul>
