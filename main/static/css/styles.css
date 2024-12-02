@@ -1,0 +1,98 @@
+/* Apply background image */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('../images/food-redistribution.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 2px solid #fff;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Main container styles */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 2rem;
+}
+
+/* Description section */
+.description {
+  max-width: 600px;
+  text-align: center;
+}
+
+.get-started-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  background-color: #f57c00;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.get-started-btn:hover {
+  background-color: #e65100;
+}
+
+/* Image section */
+.image-section {
+  max-width: 400px;
+}
+
+.app-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-container {
+      flex-direction: column;
+      gap: 1rem;
+  }
+
+  .navbar {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+  }
+}

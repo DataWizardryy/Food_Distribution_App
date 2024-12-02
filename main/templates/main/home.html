@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Redistribution App</title>
-    <!-- Link the stylesheet -->
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Link the stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
     <header>
@@ -20,5 +20,21 @@
         <a href="/request-food/">Request Food</a>
         <a href="/volunteer-coordination/">Volunteer Coordination</a>
     </nav>
+
+    <main class="main-container">
+        <section class="description">
+            <h2>About Our App</h2>
+            <p>
+                The Food Redistribution App is designed to bridge the gap between food surplus and food scarcity. 
+                Our platform connects donors, volunteers, and those in need, ensuring no food goes to waste. 
+                Join us in our mission to combat hunger and food wastage.
+            </p>
+            <a href="/register-donor/" class="get-started-btn">Get Started</a>
+        </section>
+        
+        <section class="image-section">
+            <img src="{% static 'images/food-redistribution.jpg' %}" alt="Food Redistribution" class="app-image">
+        </section>
+    </main>
 </body>
 </html>
